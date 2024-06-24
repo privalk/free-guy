@@ -1,0 +1,60 @@
+<html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>MapEditor</title>
+    <style>
+        #myCanvas {
+            z-index: 9;
+            position: absolute;
+        }
+        #myCanvas {
+            z-index: 10;
+            position: absolute;
+        }
+        #saveMap{
+            position: absolute;
+        }
+    </style>
+    <script src = "../library/jquery-3.4.1.js" type="module"></script>
+</head>
+<body>
+    <label for="startX">startX:</label>
+    <input type="text" id = 'startX' value=""/>
+    <label for="startY">startY:</label>
+    <input type="text" id = 'startY' value=""/>
+    <label for="endX">endX:</label>
+    <input type="text" id = 'endX' value=""/>
+    <label for="endY">endY:</label>
+    <input type="text" id = 'endY' value=""/>
+    <br>
+    <button id = "draw" type="button">fillRect</button>
+    <button id = "clear" type="button">clearRect</button>
+    <br>
+    <label for="goodsX">goodsX:</label>
+    <input type="text" id = 'goodsX' value=""/>
+    <label for="goodsY">goodsY:</label>
+    <input type="text" id = 'goodsY' value=""/>
+    <br>
+    <button id = "creatSlime" type="button">creatSlime</button>
+    <button id = "creatThorn" type="button">creatThorn</button>
+    <button id = "creatStar" type="button">creatStar</button>
+    <br>
+    <label for="portalToX">portalToX:</label>
+    <input type="text" id = 'portalToX' value=""/>
+    <label for="portalToY">portalToY:</label>
+    <input type="text" id = 'portalToY' value=""/>
+    <br>
+    <button id = "creatPortal" type="button">creatPortal</button>
+    <br>
+    <label for="delIndex">delIndex:</label>
+    <input type="text" id = 'delIndex' value=""/>
+    <br>
+    <button id = "saveMap" type="button">saveMap</button>
+    <br>
+    <canvas id = "myCanvas" width="4500" height="3500"> </canvas>
+    <canvas id = "goodsCanvas" width="4500" height="3500"> </canvas>
+    <script src = "./editor.js" type="module"></script>
+
+</body>
+</html>

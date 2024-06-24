@@ -1,0 +1,44 @@
+<html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>A fantastic adventure of cookies</title>
+    <style>
+        #myCanvas {
+            z-index: 9;
+            position: absolute;
+        }
+        #backGround{
+            z-index: 8;
+            position: absolute;
+        }
+        #characterDataCanvas{
+            z-index: 10;
+            position: absolute;
+        }
+        #start{
+            z-index: 11;
+            position: absolute;
+        }
+        #cloud{
+            z-index: 7;
+            position: absolute;
+        }
+        #mountain{
+            z-index: 6;
+            position: absolute;
+        }
+    </style>
+    <script src = "library/jquery-3.4.1.js" type="module"></script>
+</head>
+<body>
+    <canvas id = "mountain" width="500" height="500"></canvas>
+    <canvas id = "cloud" width="500" height="500"></canvas>
+    <canvas id = "myCanvas" width="500" height="500"> </canvas>
+    <canvas id = "backGround" width="500" height="500"> </canvas>
+    <canvas id = "characterDataCanvas" width="500" height="500"> </canvas>
+    <canvas id = "start" width="500" height="500"> </canvas>
+<!--    <canvas id = "test" width ="4500" height="3500"></canvas>-->
+    <script src = "./main.js" type="module"></script>
+</body>
+</html>
